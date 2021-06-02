@@ -135,6 +135,7 @@ const releasePlease = {
 /* c8 ignore next 4 */
 if (require.main === module) {
   main().catch(err => {
+    console.log(err)
     core.setFailed(`release-please failed: ${err.message}`)
   })
 } else {

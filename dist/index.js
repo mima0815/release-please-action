@@ -142,6 +142,7 @@ const releasePlease = {
 /* c8 ignore next 4 */
 if (require.main === require.cache[eval('__filename')]) {
   main().catch(err => {
+    console.log(err)
     core.setFailed(`release-please failed: ${err.message}`)
   })
 } else {
