@@ -84,6 +84,7 @@ async function main () {
       repoUrl: process.env.GITHUB_REPOSITORY,
       packageName,
       path,
+      apiUrl,
       monorepoTags,
       token,
       changelogPath,
